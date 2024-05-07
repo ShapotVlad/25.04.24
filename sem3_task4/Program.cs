@@ -14,7 +14,8 @@ int count = 0;
 // считаем количество цифр в числе
 
 while (numCopy != 0) // пока число не равно 0
-   { numCopy /= 10;  //numCopy = numCopy/10
+{
+    numCopy /= 10;  //numCopy = numCopy/10
     count++;
 }
 
@@ -28,7 +29,7 @@ while (num != 0)
     index++;
 }
 Console.Write("[");
-for (int i = 0; i < arr.Length; i++)  
+for (int i = 0; i < arr.Length; i++)
 {
     Console.Write($"{arr[i]} ");
 }
