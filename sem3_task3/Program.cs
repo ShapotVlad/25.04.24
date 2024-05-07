@@ -5,7 +5,7 @@
 // [2 3 1 7 5 6 3] => [6 18 5]
 // (элемент 7 не имеет пары)
 
-int[] array = { 2, 3, 1, 7, 5, 6, 3 };
+int[] array = { 2, 3, 1, 7, 5, 4, 6, 3 };
 int[] arrayResult = new int[array.Length / 2];
 
 int left = 0;
