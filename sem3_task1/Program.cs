@@ -8,7 +8,7 @@
 // int[] array2 = new int[5] { 3, 6, 8, 3, 9 };
 // int[] array3 = new int[] { 3, 6, 8, 3, 9 };
 
-int[] array = { 1, 3, 2, 19, 3, 12 };
+int[] array = { 1, 3, 2, 19, 8, 3, 12 };
 int num = 8;
 
 bool isExistNum = false;
