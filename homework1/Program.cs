@@ -14,4 +14,4 @@ for (int i = 0; i < array.Length; i++)
     }
 }
 
- Console.WriteLine($"количество элементов = {count}");
+ Console.WriteLine($"количество элементов в диапозоне от 10 до 90 = {count}");
