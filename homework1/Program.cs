@@ -15,3 +15,23 @@ for (int i = 0; i < array.Length; i++)
 }
 
  Console.WriteLine($"количество элементов в диапозоне от 10 до 90 = {count}");
+
+// {
+//         int cnt = 0;
+//         for (int i = 0; i < numbers.Length; i++)
+//         {
+//             if (numbers[i] >= minRange && numbers[i] <= maxRange)
+//             {
+//                 cnt++;
+//             }
+//         }
+//         return cnt;
+//     }
+
+//     public static void PrintResult(int[] array)
+//     {
+
+//         Console.WriteLine(CountItemsRange(array, 10, 90));
+//     }
+
+
