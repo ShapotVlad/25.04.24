@@ -2,36 +2,35 @@
 //от 1 до 100. Найти количество  элементов диапозоне [10,90]   
 
 
-int[] array = new int[10] { 13, 4, 25, 6, 8, 34, 7, 9, 51, 73 };
+int[] array = new int[10] { 13, 4, 25, 6, 8, 34, 7, 9, 51, 73 };//создали переменную массива
 
-int count = 0;
+int count = 0;//создали переменную  счетчик
 
-for (int i = 0; i < array.Length; i++)
+for (int i = 0; i < array.Length; i++)//цикл прохода масиива и опредиления числа в диапозоне
 {
-    if (array[i]>10 && array[i]<90)
+    if (array[i] > 10 && array[i] < 90)// условие если
     {
-        count = count + 1;
+        count = count + 1;// считает счётчик 
     }
 }
+//вывод на консоль
+Console.WriteLine($"количество элементов в диапозоне от 10 до 90 = {count}");
 
- Console.WriteLine($"количество элементов в диапозоне от 10 до 90 = {count}");
-
-// {
-//         int cnt = 0;
-//         for (int i = 0; i < numbers.Length; i++)
-//         {
-//             if (numbers[i] >= minRange && numbers[i] <= maxRange)
-//             {
-//                 cnt++;
-//             }
-//         }
-//         return cnt;
-//     }
-
-//     public static void PrintResult(int[] array)
-//     {
-
-//         Console.WriteLine(CountItemsRange(array, 10, 90));
-//     }
-
+// второй вариант через функцию
+int CountItemsRange(int[] numbers, int minRange, int  maxRange)//создаем локальную функцию для поика чисел в диапозоне
+{
+    int cnt = 0; //вводим  переменныйсчетчик
+    for (int i = 0; i < numbers.Length; i++)//цикл прохождения массива
+    {
+        if (numbers[i] >= minRange && numbers[i] <= maxRange)//если число в диапозоне счетчик увеливаем
+        {
+            cnt++;
+        }
+    }
+    return cnt;//возврат в переменную
+}
+int[] arr = new int[10] { 13, 4, 25, 6, 8, 34, 7, 9, 51, 73 };// создали массив
+CountItemsRange(arr, 10, 90);//вызвали  фунцию и ввели параметр
+int result = CountItemsRange(arr, 10, 90);// создали  переменную  результат равную локадьной функции
+Console.WriteLine($"количество элементов в диапозоне от 10 до 90 = {result}");// вывели на консоль
 
