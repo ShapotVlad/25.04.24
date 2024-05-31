@@ -1,37 +1,39 @@
 ﻿//задать массив  из 10 целых чисел
 //определить  коичество четных чисел в массиве
 
-int[] array = new int[10] { 13, 4, 25, 6, 8, 34, 78, 9, 52, 73 };
+int[] array = new int[10] { 13, 4, 25, 6, 8, 34, 78, 9, 52, 73 };// создали целочисленный массив
 
-int count = 0;
+int count = 0;//ввели переменную счетчика
 
-for (int i = 0; i < array.Length; i++)
+for (int i = 0; i < array.Length; i++)//создали цикл прождения массива
 {
-    if (array[i] % 2 == 0)
+    if (array[i] % 2 == 0)//если число чётное
     {
-        count = count + 1;
+        count = count + 1;//счетчик увеличиваем
     }
 }
+//выводим на консоль 
+Console.WriteLine($"количество четных элементов в массиве = {count}");
 
- Console.WriteLine($"количество четных элементов в массиве = {count}");
+//второй вариант через функцию 
 
+ 
+int CountEvenItems(int[] numbers)// создали локальную функцию определения четных чисел
+{
+    int cnt = 0;
+    for (int i = 0; i < numbers.Length; i++)
+    {
+        if (numbers[i] % 2 == 0)
+        {
+            cnt++;
+        }
+    }
+    return cnt;// возврат функции в переменную счетчика
+}
 
-// // Подсчет количества четных элементов массива
-//     // numbers - массив, в котором ведется подсчет
-//     public static int CountEvenItems(int[] numbers)
-//     {
-//         int cnt = 0;
-//         for (int i = 0; i < numbers.Length; i++)
-//         {
-//             if (numbers[i] % 2 == 0)
-//             {
-//                 cnt++;
-//             }
-//         }
-//         return cnt;
-//     }
+int[] arr = new int[10] { 13, 4, 25, 6, 8, 34, 78, 9, 52, 73 };
+CountEvenItems(arr);//вызываем функцию и вводим параметр
 
-//     public static void PrintResult(int[] array)
-//     {
-//         Console.WriteLine(CountEvenItems(array));
-//     }
+int result =CountEvenItems(arr); // создали  переменную  результат равную локальной функции
+Console.WriteLine($"количество чётных элементов в массиве = {result}");// вывели на консоль
+
