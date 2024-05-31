@@ -5,19 +5,19 @@
 // [2 3 1 7 5 6 3] => [6 18 5]
 // (элемент 7 не имеет пары)
 
-int[] array = { 2, 3, 1, 7, 5, 4, 6, 3 };
-int[] arrayResult = new int[array.Length / 2];
+int[] array = { 2, 3, 1, 7, 5, 4, 6, 3 };//ввели переменную входного массива 
+int[] arrayResult = new int[array.Length / 2];//ввели переменную  для создания нового массива
 
-int left = 0;
-int right = array.Length - 1;
+int left = 0;//ввели переменную индекса  слева
+int right = array.Length - 1;//ввели переменную индекса справа
 
-while (left < right)
+while (left < right)//содали цикл по переумножению чисел и записи в новый массив
 {
     arrayResult[left] = array[left] * array[right];
     left++;
     right--;
 }
-
+//вывод на консоль нового массива
 for (int i = 0; i < arrayResult.Length; i++)
 {
     Console.Write(arrayResult[i] + " ");
