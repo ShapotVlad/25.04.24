@@ -1,14 +1,14 @@
 ﻿//создать массив  из вещественных чисел с ненулевой дробной частью
 //найти разницу между максимальноым и минимальным элементами массива
 
-double[] array = new double[8] { 13.12, 4.22, 25.36, 34.78, 98.94, 9.69, 52.31, 73.63 };
+double[] array = new double[8] { 13.12, 4.22, 25.36, 34.78, 98.94, 9.69, 52.31, 73.63 };//ввели вещщественный массив
 
-double max = array[0];
+double max = array[0];// ввели вещественные переменные макс и минимал
 double min = array[0];
 
-double difference = 0;
+double difference = 0;//ввели вещественную переменную разности
 
-for (int i = 0; i < array.Length; i++)
+for (int i = 0; i < array.Length; i++)//цикл поиска макс в массиве
 {
     if (array[i] > max)
     {
@@ -16,7 +16,7 @@ for (int i = 0; i < array.Length; i++)
     }
 }
 
-for (int i = 0; i < array.Length; i++)
+for (int i = 0; i < array.Length; i++)//цикл поика минимал в массиве
 {
     if (array[i] < min)
     {
@@ -24,8 +24,8 @@ for (int i = 0; i < array.Length; i++)
     }
 }
 
-difference = max - min;
-
+difference = max - min;//результат
+//вывели на консоль
 Console.WriteLine($"вывод результата = {difference}");
 
 
